@@ -1,0 +1,825 @@
+/*
+ Theme Name:   Presco
+ Theme URI:    https://understrap.com
+ Description:  Understrap Child Theme
+ Author:       Design Garage
+ Author URI:   https://www.designgarage.co.nz
+ Template:     understrap
+ Version:      1.2.0
+ License: GNU General Public License v2 or later
+ License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  understrap-child
+ Tags: one-column, custom-menu, featured-images, theme-options, translation-ready
+ GitHub Theme URI: understrap/understrap-child
+*/
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: #414042;
+}
+h1 {
+    font-size: 35px;
+    line-height: 45px;
+    color: #414042;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+h2 {
+    font-size: 30px;
+    line-height: 40px;
+    color: #414042;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+p {
+    margin-bottom: 20px;
+}
+a {
+    text-decoration: none;
+    color:#788487;
+}
+.environmental a {
+    color: #00A39E;
+}
+.prenail a {
+    color: #FAB500;
+}
+.hire a {
+    color: #164A7C;
+}
+a:hover {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.btn {
+    padding: 15px 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    border-width: 2px;
+    border-radius: 4px;
+}
+.btn-primary {
+    color: #788487;
+    border-color: #788487;
+    background-color: #ffffff;
+    position: relative;
+    padding-right: 40px;
+}
+.btn-primary:after {
+    content: "\f105";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 22px;
+}
+.btn-primary:hover {
+    color: #f8f9fa;
+    background: #788487;
+    border-color: #f8f9fa;
+}
+.environmental .btn-primary, .prenail .btn-primary, .hire .btn-primary {
+    color: #788487;
+}
+.environmental .btn-primary:hover {
+    color: #f8f9fa;
+    background: #00A39E;
+    border-color: #00A39E;
+}
+.hire .btn-primary:hover {
+    color: #f8f9fa;
+    background: #164A7C;
+    border-color: #164A7C;
+}
+.prenail .btn-primary:hover {
+    color: #f8f9fa;
+    background: #FAB500;
+    border-color: #FAB500;
+}
+.no-padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+#header {
+    height: 138px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+#header div {
+    height: 100%;
+}
+#header .btn-primary:after {
+    content:"";
+}
+#parent-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+}
+#parent-menu li {
+    height: 100%;
+}
+#parent-menu li a {
+    display: flex;
+    padding: 0 20px;
+    color: #222222;
+    text-transform: uppercase;
+    align-items: center;
+    height: 100%;
+    font-weight: 600;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+#parent-menu li.menu-item-37:hover a {
+    background-color: #00A39E;
+    color: #ffffff;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.environmental #parent-menu li.menu-item-37 a {
+    background-color: #00A39E;
+    color: #ffffff;
+}
+.prenail #parent-menu li.menu-item-38 a {
+    background-color: #FAB500;
+    color: #ffffff;
+}
+.hire #parent-menu li.menu-item-39 a {
+    background-color: #164A7C;
+    color: #ffffff;
+}
+#parent-menu li.menu-item-38:hover a {
+    background-color: #FAB500;
+    color: #ffffff;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+#parent-menu li.menu-item-39:hover a {
+    background-color: #164A7C;
+    color: #ffffff;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+#header .btn-container {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+#header .btn-primary {
+    color: #ffffff;
+    background-color: #343a40;
+    border-color: #343a40;
+    font-size: 14px;
+}
+#header .btn-primary span {
+    margin-right: 5px;
+    font-size: 14px;
+}
+#header .btn-primary:hover {
+    background-color: #23272b;
+    border-color: #23272b;
+}
+#header .btn-secondary {
+    font-size: 9px;
+    line-height: 28px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 12px;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+    color: #788487;
+    margin-bottom: 5px;
+}
+#header .btn-secondary:hover {
+    color: #788487;
+    background-color: #e2e6ea;
+    border-color: #e2e6ea;
+}
+.presco #header .btn-secondary {
+    display: none;
+}
+.mega-menu > li.mega-menu-item.mega-current-menu-item > a.mega-menu-link {
+    background-color: #d7d8da !important;
+}
+#header .logo {
+    position: absolute;
+    left: 50px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    top: 50%;
+    z-index: 2;
+    height: auto;
+    width: 130px;
+}
+#presco-menu-wrapper {
+    width: 100%;
+    z-index: 9999;
+    position: relative;
+}
+#presco-menu-wrapper.fixed {
+    position:fixed;
+    top: 0;
+    -webkit-animation: slide-down 0.7s;
+    -moz-animation: slide-down 0.7s;
+    animation: slide-down 0.7s;
+}
+.single-service .wrapper, .single-product .wrapper, .tax-product_cat .wrapper, .single-equipment-hire .wrapper {
+    margin-top: 50px;
+}
+.single-service h1 {
+    font-size: 30px;
+    color: #414042;
+    line-height: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.single-service .form-wrapper {
+    margin-top: 100px;
+}
+.single-service .additional-info {
+    margin-top: 30px;
+}
+@-webkit-keyframes slide-down { 0% { opacity:0; transform:translateY(-100%);}100% { opacity:0.9; transform:translateY(0);}}
+@-moz-keyframes slide-down { 0% { opacity:0; transform:translateY(-100%);}100% { opacity:0.9; transform:translateY(0);}}
+@keyframes slide-down { 0% { opacity:0; transform:translateY(-100%);}100% { opacity:0.9; transform:translateY(0);}}
+.environmental #header .logo {
+    width: 350px;
+}
+.prenail #header .logo {
+    width: 250px;
+}
+.hire #header .logo {
+    width: 200px;
+}
+.banner-wrapper {
+    position: relative;
+}
+.presco .banner-wrapper {
+    height: 600px;
+    overflow: hidden;
+}
+.presco .banner-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+}
+.prenail .banner-wrapper {
+    height: 600px;
+    overflow: hidden;
+}
+.prenail .banner-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+}
+.hire .banner-wrapper {
+    height: 600px;
+    overflow: hidden;
+}
+.hire .banner-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+}
+.banner-wrapper .banner-content-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    top: 50%;
+    margin: 0 auto;
+    z-index: 2;
+}
+.banner-wrapper .banner-content-wrapper h1 {
+    color: #ffffff;
+    font-size: 50px;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 25px;
+    width: 80%;
+}
+.banner-wrapper .banner-content-wrapper p {
+    color: #ffffff;
+    line-height: 30px;
+    width: 45%;
+    margin-bottom: 40px;
+}
+.banner-wrapper .banner-content-wrapper .btn {
+    border: 2px solid #f8f9fa;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    position: relative;
+    padding-right:40px;
+}
+.banner-wrapper .banner-content-wrapper .btn:after {
+    content:"\f105";
+    font-family: FontAwesome;
+    position: absolute;
+}
+.banner-wrapper .banner-content-wrapper .btn span {
+    margin-left: 5px;
+}
+.banner-wrapper .banner-content-wrapper .btn:hover {
+    background-color: #f8f9fa;
+    color: #788487;
+}
+.environmental .banner-wrapper .banner-content-wrapper h1 {
+    width: 90%;
+}
+.environmental .banner-wrapper .banner-content-wrapper p {
+    width: 100%;
+}
+.environmental .banner-wrapper .banner-content-wrapper p {
+    width: 60%;
+}
+.presco .banner-wrapper .banner-content-wrapper .btn:after {
+    right: 22px;
+}
+.environmental .banner-wrapper .banner-content-wrapper .btn:after {
+    right: 25px;
+}
+.prenail .banner-wrapper .banner-content-wrapper .btn:after {
+    right: 22px;
+}
+.hire .banner-wrapper .banner-content-wrapper .btn:after {
+    right: 22px;
+}
+.page-title {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    margin-bottom: 60px;
+}
+.page-title h1 {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.presco .page-title {
+    background-color: #0f2632;
+}
+.environmental .page-title {
+    background-color: #009a93;
+}
+.hire .page-title {
+    background-color: #164A7C;
+}
+.page-title .snippet {
+    margin-top: 40px;
+}
+.page-title .snippet p {
+    margin-bottom: 0;
+    color: #ffffff;
+}
+.page-title .btn {
+    border: 2px solid #f8f9fa;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    position: relative;
+    padding-right:40px;
+    margin-top: 40px;
+    background-color: transparent;
+}
+.page-title .btn:after {
+    content:"\f105";
+    font-family: FontAwesome;
+    position: absolute;
+    margin-left: 5px;
+}
+.page-title .btn:hover {
+    background-color: #f8f9fa;
+    color: #788487;
+}
+.quick-links-wrapper {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    position: relative;
+    height: auto;
+}
+.quick-links-wrapper .inner-wrapper {
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+    top: 0;
+}
+.quick-links-wrapper .inner-wrapper.slide-up {
+    top: -63px;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.quick-links-wrapper .inner-wrapper .visit-site {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.quick-links-wrapper .inner-wrapper .visit-site span {
+    font-size: 18px;
+    color: #414042;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.quick-links-wrapper .inner-wrapper .visit-site span:after {
+    content:"\f105";
+    font-family: FontAwesome;
+    position: absolute;
+    margin-left: 5px;
+}
+.services-module h2 {
+    margin-bottom: 40px;
+}
+.services-module .panel a {
+    display: block;
+}
+.services-module .panel .content-wrapper {
+    padding: 20px;
+    text-align: center;
+}
+.services-module .panel .image-wrapper {
+    overflow: hidden;
+}
+.services-module .panel .image-wrapper img {
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.services-module .panel:hover .image-wrapper img {
+    transform: scale(1.1);
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+}
+.services-module .panel .content-wrapper h3 {
+    font-size: 16px;
+    line-height: 22px;
+    color: #414042;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.form-wrapper .wpcf7-submit {
+    padding: 15px 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    border: 2px solid #009a93;
+    color: #009a93;
+    background-color: #ffffff;
+    border-radius: 4px;
+    position: relative;
+}
+.form-wrapper .wpcf7-submit:hover {
+    background-color: #009a93;
+    color: #ffffff;
+}
+.form-wrapper .wpcf7-submit {
+    border: 2px solid #009a93;
+    color: #009a93;
+}
+.hire .form-wrapper .wpcf7-submit {
+    border: 2px solid #009a93;
+    color: #009a93;
+}
+.hire .form-wrapper .wpcf7-submit:hover {
+    background-color: #164A7C;
+    color: #ffffff;
+}
+.hire .form-wrapper .wpcf7-submit {
+    border: 2px solid #164A7C;
+    color: #164A7C;
+}
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+    font-size: 16px;
+    line-height: 22px;
+}
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+    text-align: center;
+}
+.woocommerce ul.products li.product .price {
+    color: #414042;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.btn-outline-primary {
+    padding: 15px 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    border: 2px solid #009a93;
+    color: #009a93;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+.btn-outline-primary:hover {
+    background-color: #009a93;
+    color: #ffffff;
+    border-color: #009a93;
+}
+#footer {
+    background-color: #222222;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#footer h4 {
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+#footer .inner-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ul.footer-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+ul.footer-menu li {
+    line-height: 25px;
+}
+ul.footer-menu li a {
+    font-size: 14px;
+    color: #788487;
+}
+ul.footer-menu li a:hover {
+    color: #505cfd;
+}
+.footer-widget-wrapper {
+    width: 100px;
+}
+#copyright {
+    background-color: #222222;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 1px solid #2c2c2c;
+    display: flex;
+    justify-content: center;
+    color: #414042;
+}
+.ani-in {
+    backface-visibility: hidden;
+    opacity: 0;
+    transform: translate(0, 0);
+    transition: opacity 800ms cubic-bezier(0.215, 0.61, 0.355, 1) 0s, transform 300ms cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+}
+.ani-show {
+    opacity: 1;
+    transform: translate(0px, 0px);
+}
+html {
+    scroll-behavior:smooth;
+}
+.form-control::placeholder {
+    font-size: 13px;
+}
+.slick-slide {
+    outline: none
+}
+.gallery-images {
+    background-color: #000000;
+}
+.gallery-images i {
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 700;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    top: 50%;
+    z-index: 99;
+    cursor: pointer;
+}
+.gallery-images i.fa-angle-left {
+    left: 15px;
+    z-index: 2;
+}
+.gallery-images i.fa-angle-right {
+    right: 15px;
+    z-index: 2;
+}
+.gallery-images .slick-slide img {
+    opacity: 0.8;
+}
+ul.presco-breadcrumb {
+    list-style: none;
+    margin: 0 0 50px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    font-size: 12px;
+    color: #788487;
+}
+ul.presco-breadcrumb li {
+    position: relative;
+}
+ul.presco-breadcrumb li:after {
+    content: "/";
+    color: #788487;
+    position: absolute;
+    right: -12px;
+}
+ul.presco-breadcrumb li a {
+    color: #788487;
+}
+ul.presco-breadcrumb li:last-child:after {
+    content: "";
+}
+.environmental ul.presco-breadcrumb li a:hover {
+    color: #009a93;
+}
+.woocommerce .woocommerce-breadcrumb {
+    margin-bottom: 50px;
+}
+.cart-menu {
+    position: absolute;
+    right: 20px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    top: 50%;
+}
+.cart-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.cart-menu ul li {
+    position: relative;
+}
+.cart-menu ul li a {
+    color: #009a93;
+    font-size: 20px;
+}
+.cart-menu ul li a .items {
+    font-size: 12px;
+    position: absolute;
+    top: -15px;
+}
+.woocommerce div.product p.price, .woocommerce div.product span.price {
+    color: #788487;
+}
+#presco-menu-wrapper-mobile {
+    display: none;
+}
+ul.mega-menu {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+}
+ul.mega-menu li a {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #222222;
+}
+.mega-menu ul.sub-menu {
+    list-style: none;
+    margin: 10px 0;
+    padding: 0;
+}
+.mega-menu ul.sub-menu li {
+    line-height: 30px;
+}
+.mega-menu ul.sub-menu li a {
+    color: #9d9d9d;
+    text-transform: none;
+}
+@media screen and (max-width: 1199px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+    #header .logo {
+        left: 15px;
+    }
+    .environmental #header .logo {
+        width: 250px;
+    }
+    .prenail #header .logo {
+        width: 200px;
+    }
+    .btn {
+        padding: 10px 20px;
+    }
+}
+@media screen and (max-width: 991px) {
+    h1 {
+        font-size: 30px;
+        line-height: 40px;
+        color: #414042;
+    }
+    h2 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .single-service h1 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    #presco-menu-wrapper-mobile {
+        display: block;
+        margin-right: 15px;
+    }
+    #presco-menu-wrapper {
+        display: none;
+    }
+    .top-menu-wrapper {
+        display: none;
+    }
+    #header .btn-container {
+        display: none;
+    }
+    #header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+    }
+    #header .logo {
+        position: relative;
+        top: 0;
+        transform: translateY(0);
+        -webkit-transform: translateY(0);
+    }
+    #mega-menu-wrap-primary #mega-menu-primary {
+        margin-top: 40px;
+    }
+    #footer .inner-wrapper {
+        flex-wrap: wrap;
+    }
+    .single-service .form-wrapper {
+        margin-bottom: 80px;
+    }
+    .woocommerce-product-gallery__wrapper {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
